@@ -37,7 +37,7 @@ namespace Novo.Controllers {
         /// <returns></returns>
         [AcceptVerbs("GET")]
         [ResponseType(typeof(List<Cliente>))]
-        public HttpResponseMessage BuscarClientes(string cidade) {
+        public HttpResponseMessage BuscarClientesCidade(string cidade) {
             return bo.BuscarClientes(Request,cidade);
         }
 

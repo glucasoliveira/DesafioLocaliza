@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EnterpriseDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="Cpf" />
+    </Key>
+    <Property Name="Cpf" Type="bigint" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Cnh" Type="bigint" Nullable="false" />
+    <Property Name="CategoriaCnh" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="Endereco" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Bairro" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Cidade" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Telefone" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="DataNascimento" Type="smalldatetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contratos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CpfCliente" Type="bigint" Nullable="false" />
+    <Property Name="IdVeiculo" Type="int" Nullable="false" />
+    <Property Name="DataInicio" Type="smalldatetime" Nullable="false" />
+    <Property Name="DataFim" Type="smalldatetime" Nullable="false" />
+    <Property Name="Valor" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Senha" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Tipo" Type="nchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Veiculos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Placa" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Marca" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Modelo" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Ano" Type="nchar" MaxLength="4" Nullable="false" />
+    <Property Name="ValorDiaria" Type="real" Nullable="false" />
+    <Property Name="Kilometragem" Type="bigint" Nullable="false" />
+    <Property Name="Status" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="EnterpriseDatabaseModelStoreContainer">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contratos" EntityType="Self.Contratos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Veiculos" EntityType="Self.Veiculos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novo", "Novo\Novo.csproj", "{8078FFB7-35A1-4FD4-BC04-E19E2041D855}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novo.Tests", "Novo.Tests\Novo.Tests.csproj", "{B3439EEF-AA57-41DA-BBD5-5CE52E1DE78F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8078FFB7-35A1-4FD4-BC04-E19E2041D855} = {8078FFB7-35A1-4FD4-BC04-E19E2041D855}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8078FFB7-35A1-4FD4-BC04-E19E2041D855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8078FFB7-35A1-4FD4-BC04-E19E2041D855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8078FFB7-35A1-4FD4-BC04-E19E2041D855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8078FFB7-35A1-4FD4-BC04-E19E2041D855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3439EEF-AA57-41DA-BBD5-5CE52E1DE78F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3439EEF-AA57-41DA-BBD5-5CE52E1DE78F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3439EEF-AA57-41DA-BBD5-5CE52E1DE78F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3439EEF-AA57-41DA-BBD5-5CE52E1DE78F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D1C3EB4-3488-4983-B49E-454B52309107}
+	EndGlobalSection
+EndGlobal

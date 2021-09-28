@@ -18,12 +18,10 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## Sobre o Projeto
 
-[![product-screenshot]]
+[product-screenshot]
 
 O desafio se consiste em implementar um projeto para suportar uma alta demanda de abertura e manutenção de contratos de aluguel em uma empresa, além de definir a arquitetura para a migração do produto legado composto de uma aplicação integrada com uma base de dados já existente.
 
@@ -84,6 +82,9 @@ Também é necessário a criação das seguintes tabelas
   sql/Veiculos.sql
   ```	
 
+## Proposta de migração
+[proposta]
+
 <!-- CONTACT -->
 ## Contact
 
@@ -91,3 +92,4 @@ Gabriel Lucas - gabriellucasoliveiradealmeida@gmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [product-screenshot]: images/screenshot.png
+[proposta]: images/proposta.png
